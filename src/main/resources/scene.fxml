@@ -21,6 +21,12 @@
             </VBox>
             <!--Batoh-->
             <!--Predmety-->
+            <VBox>
+                <Label>Predmety</Label>
+                <VBox fx:id="items">
+                    <!--SSem se budou vkladat predmety v dane lokaci-->
+                </VBox>
+            </VBox>
         </VBox>
     </right>
 </BorderPane>

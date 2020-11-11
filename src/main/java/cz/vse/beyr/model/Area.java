@@ -107,6 +107,9 @@ public class Area
         return description;
     }
 
+    public Set<Area> getExits() {
+        return exits;
+    }
     /**
      * Metoda vrací lokaci, která sousedí s aktuální lokací a jejíž název
      * je předán v parametru. Pokud lokace s daným jménem nesousedí s aktuální
@@ -243,4 +246,6 @@ public class Area
     {
         return persons.get(personName);
     }
-}
+
+    }
+
