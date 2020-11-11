@@ -48,7 +48,7 @@ public class GamePlan
         Area farma = new Area("farma","Zde žije Ragnar se svou rodinou.");
         Area anglie = new Area(FINAL_LOCATION_NAME, "Úspěšně jsi doplul do Anglie a zahajuješ nájezdy do přilehlých osad.");
         Area lodenice = new Area("lodenice","Zde Floki vyrábí lodě.");
-        Area flokihoDum = new Area("flokiho_dum","Ocitl ses uprostřed lesů, kde žije Floki se svou družkou Helgou.");
+        Area flokihoDum = new Area("flokiho_dum","Ocitl jsi se uprostřed lesů, kde žije Floki se svou družkou Helgou.");
         Area kattegat = new Area("kattegat","Ocitl jsi se na náměstí Kattegatu.");
         Area trh = new Area("trh", "Všude okolo je spoustu lidí a stánků.");
         Area pristav = new Area("pristav", "Jsi na molu, kde městské lodě hlídají stráže.");

@@ -103,6 +103,10 @@ public class Area
         + personNames;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
     /**
      * Metoda vrací lokaci, která sousedí s aktuální lokací a jejíž název
      * je předán v parametru. Pokud lokace s daným jménem nesousedí s aktuální
