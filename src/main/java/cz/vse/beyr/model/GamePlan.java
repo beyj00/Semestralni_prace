@@ -85,7 +85,7 @@ public class GamePlan
         Item pivo = new Item("pivo", "Tmavé a velmi silné pivo.");
         Item stul = new Item("stul", "masivní stůl z dubového dřeva.", false, false);
         Item stanek = new Item("stanek", "malý stánek s pečivem.", false, false);
-        Item flotila = new Item("flotila", "deset lodí připravených na drancovální a nájezdy.");
+        Item flotila = new Item("flotila", "deset lodí připravených na drancovální a nájezdy.", false, false);
         Item svicen = new Item("svicen", "Zlatý svícen, určitě by se dal za něco vyměnit.");
         Item sin = new Item("sin", "Příbytek jarla Kattegatu. Konají se zde veškerá zasedání a oslavy.", false, false);
         Item mec = new Item("mec", "Starý železný meč.", true, true);

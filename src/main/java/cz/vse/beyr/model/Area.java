@@ -24,7 +24,8 @@ public class Area
     private String description;
     private Set<Area> exits;  // Obsahuje sousední lokace, do kterých lze z této odejít
     private Map<String, Item> items;  // Obsahuje předměty v lokaci
-    private Map<String, Person> persons;
+    private Map<String, Person> persons; //Obsahuje osoby v lokaci
+    private Map<String, Item> inventory;
 
     /**
      * Konstruktor třídy. Vytvoří lokaci se zadaným názvem a popisem.
@@ -39,6 +40,11 @@ public class Area
         this.exits = new HashSet<>();
         this.items = new HashMap<>();
         this.persons = new HashMap<>();
+        this.inventory = new HashMap<>();
+    }
+
+    public Map<String, Item> getItemList() {
+        return items;
     }
 
     /**
@@ -86,10 +92,10 @@ public class Area
             exitNames += " " + exitArea.getName();
         }
 
-        /** String itemNames = "Předměty:";
+        String itemNames = "Předměty:";
         for (String itemName : items.keySet()) {
         itemNames += " " + itemName;
-        }**/
+        }
 
         String personNames = "Osoby:";
         for (String personName : persons.keySet()) {
@@ -247,5 +253,12 @@ public class Area
         return persons.get(personName);
     }
 
+    public Map<String, Person> getListPerson() {
+        return this.persons;
     }
+
+    public Map<String, Item> getInventoryList() {
+        return this.inventory;
+    }
+}
 

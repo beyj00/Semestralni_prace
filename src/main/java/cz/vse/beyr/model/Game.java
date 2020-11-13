@@ -57,7 +57,8 @@ public class Game implements IGame
                 + "Toto je příběh o vyplutí Ragnara na západ a objevení Anglie.\n"
                 + "Napište 'napoveda', pokud si nevíte rady, jak hrát dál.\n"
                 + "\n"
-                + gamePlan.getCurrentArea().getFullDescription();
+                + gamePlan.getCurrentArea().getFullDescription()
+                +"\n";
     }
 
     /**

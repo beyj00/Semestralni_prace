@@ -1,0 +1,36 @@
+.label {
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-padding: 10;
+}
+
+.muj-box {
+    -fx-background-color: rgba(192,192,192,0.5);
+    -fx-padding: 10;
+    -fx-background-insets: 10 10 0 10;
+    -fx-alignment: center;
+}
+#textOutput {
+    -fx-background-color: rgba(255,255,255,0.5);
+    -fx-background-insets: 10 10 0 10;
+    -fx-padding: 10;
+}
+#textOutput .scroll-pane {
+    -fx-background-color: transparent;
+}
+#textOutput .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+#textOutput .scroll-pane  .content{
+    -fx-background-color: transparent;
+}
+#textInput {
+    -fx-background-color: rgba(255,255,255,0.5);
+    -fx-min-height: 50;
+    -fx-background-insets: 10;
+}
+
+#locationName {
+    -fx-font-weight: bold;
+    -fx-font-size: 24;
+    -fx-text-align: center;
+}

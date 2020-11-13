@@ -4,17 +4,13 @@ package cz.vse.beyr.main;
 import cz.vse.beyr.MainController;
 import cz.vse.beyr.model.Game;
 import cz.vse.beyr.model.IGame;
+import cz.vse.beyr.model.Inventory;
 import cz.vse.beyr.textui.TextUI;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import sun.font.Decoration;
-
 import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
@@ -51,10 +47,8 @@ public final class Start extends Application
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        System.out.println("Startuji");
         primaryStage.setFullScreen(true);
         primaryStage.setTitle("Vikingové");
-        primaryStage.show();
 
 
         FXMLLoader loader = new FXMLLoader();
@@ -66,7 +60,7 @@ public final class Start extends Application
 
         MainController controller = loader.getController();
         IGame game = new Game();
-
+        Inventory inventory = new Inventory(game.getGamePlan());
         controller.init(game);
         primaryStage.show();
 

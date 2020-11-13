@@ -19,8 +19,9 @@ import java.util.*;
             this.inventoryMap = new HashMap<String, Item>();
             this.gamePlan = gamePlan;
         }
-        
-        /**
+
+
+    /**
          * Přidá item do inventáře a kontroluje, jeslti se tam vejde.
          * @param name název předmětu
          * @param item předmět
