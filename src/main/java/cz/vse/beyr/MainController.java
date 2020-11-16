@@ -3,12 +3,14 @@ package cz.vse.beyr;
 
 import com.sun.xml.internal.ws.util.StringUtils;
 import cz.vse.beyr.model.*;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Tooltip;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
@@ -17,17 +19,24 @@ import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
+import javafx.stage.Stage;
+import sun.security.tools.keytool.Main;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collection;
 import java.util.Set;
 
 
 public class MainController {
-
+    @FXML
     public StackPane stackpane;
     public VBox persons;
     public VBox inventory;
+    public MenuItem quit;
+    public MenuItem reset;
     private IGame game;
 
     public Label locationName;
@@ -55,14 +64,17 @@ public class MainController {
         String description = getCurrentArea().getDescription();
         locationDescription.setText(description);
 
-
-
         updateExits();
         updateItems();
         updateArea();
         updatePerson();
-
+       // updateQuit();
     }
+    /*private void updateQuit() {
+        quit.setOnAction(event -> {
+            executeCommand("konec ");
+        });
+    }*/
     private void updateArea() {
          InputStream stream = getClass().getClassLoader().getResourceAsStream(getCurrentArea().getName() + ".jpg");
          Image img = new Image(stream);
@@ -106,10 +118,12 @@ public class MainController {
         }
 
     }
+
+
     private void updateItems() {
         Collection<Item> itemList = getCurrentArea().getItemList().values();
         items.getChildren().clear();
-
+        inventory.getChildren().clear();
         for (Item item : itemList) {
             String itemName = item.getName();
             Label itemLabel = new Label(itemName);
@@ -137,29 +151,8 @@ public class MainController {
             }
 
             items.getChildren().add(itemLabel);
-
         }
-
     }
-/*
-    private void updateInventory() {
-        String inv = showInventory.getName();
-        inventory.getChildren().clear();
-        Label inventroyLabel = new Label(inv);
-        getLabel(inv, inventroyLabel);
-        inventory.getChildren().add()
-    }*/
-
-    private void getLabel(String name, Label label) {
-        label.setCursor(Cursor.HAND);
-        InputStream stream = getClass().getClassLoader().getResourceAsStream(name + ".jpg");
-        Image img = new Image(stream);
-        ImageView imageView = new ImageView(img);
-        imageView.setFitWidth(100);
-        imageView.setFitHeight(70);
-        label.setGraphic(imageView);
-    }
-
     private void updateExits() {
         Set<Area> exitList = getCurrentArea().getExits();
         exits.getChildren().clear();
@@ -177,10 +170,30 @@ public class MainController {
         }
 
     }
+
+/*
+    private void updateInventory() {
+        String inv = showInventory.getName();
+        inventory.getChildren().clear();
+        Label inventroyLabel = new Label(inv);
+        getLabel(inv, inventroyLabel);
+        inventory.getChildren().add()
+    }*/
+
+
     private void executeCommand(String command) {
         String result = game.processCommand(command);
         textOutput.appendText(result + "\n\n");
         update();
+    }
+    private void getLabel(String name, Label label) {
+        label.setCursor(Cursor.HAND);
+        InputStream stream = getClass().getClassLoader().getResourceAsStream(name + ".jpg");
+        Image img = new Image(stream);
+        ImageView imageView = new ImageView(img);
+        imageView.setFitWidth(100);
+        imageView.setFitHeight(70);
+        label.setGraphic(imageView);
     }
 
     private Area getCurrentArea() {
@@ -193,5 +206,29 @@ public class MainController {
            executeCommand(textInput.getText());
             textInput.setText("");
         }
+    }
+
+    public void help(ActionEvent actionEvent) {
+        Stage primaryStage = new Stage();
+        WebView webView = new WebView();
+        WebEngine webEngine = webView.getEngine();
+        webEngine.load(getClass().getResource("/help.html").toString());
+        Scene scene = new Scene(webView,600,600);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Help");
+        primaryStage.show();
+    }
+    @FXML
+    public void quit(ActionEvent actionEvent) {
+        Platform.exit();
+    }
+
+    public void restart(ActionEvent actionEvent) {
+        game = new Game();
+        textOutput.clear();
+        textInput.clear();
+        items.getChildren().clear();
+        inventory.getChildren().clear();
+        init(game);
     }
 }

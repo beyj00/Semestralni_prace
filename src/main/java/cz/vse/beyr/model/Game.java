@@ -123,15 +123,6 @@ public class Game implements IGame
     }
 
     /**
-     * {@inheritDoc}
-     */
-    @Override
-    public GamePlan getGamePlan()
-    {
-        return gamePlan;
-    }
-
-    /**
      * Metoda nastaví příznak indikující, že nastal konec hry. Metodu
      * využívá třída {@link CommandTerminate}, mohou ji ale použít
      * i další implementace rozhraní {@link ICommand}.
@@ -143,4 +134,17 @@ public class Game implements IGame
         this.gameOver = gameOver;
     }
 
+
+    public Inventory getInventory() {
+        return inventory;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public GamePlan getGamePlan()
+    {
+        return gamePlan;
+    }
 }

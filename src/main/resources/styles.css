@@ -8,11 +8,14 @@
     -fx-padding: 10;
     -fx-background-insets: 10 10 0 10;
     -fx-alignment: center;
+    -fx-max-height: Infinity;
+    -fx-max-width: Infinity;
 }
 #textOutput {
     -fx-background-color: rgba(255,255,255,0.5);
     -fx-background-insets: 10 10 0 10;
     -fx-padding: 10;
+    -fx-max-height: 150;
 }
 #textOutput .scroll-pane {
     -fx-background-color: transparent;
@@ -30,7 +33,14 @@
 }
 
 #locationName {
+    -fx-background-color:  rgba(0,0,0,0);
     -fx-font-weight: bold;
     -fx-font-size: 24;
+    -fx-text-align: center;
+}
+
+#locationDescription {
+    -fx-background-color:  rgba(0,0,0,0);
+    -fx-font-size: 18;
     -fx-text-align: center;
 }

@@ -8,6 +8,7 @@ import java.util.*;
     public class Inventory {
         private Map<String, Item> inventoryMap;
         private GamePlan gamePlan;
+        private Inventory inventory;
 
         /**
          * Konstruktor třídy.
@@ -102,5 +103,4 @@ import java.util.*;
         {
             return inventoryMap.get(itemName);
         }
-    
 }

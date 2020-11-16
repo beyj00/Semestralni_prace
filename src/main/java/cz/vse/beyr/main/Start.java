@@ -63,7 +63,6 @@ public final class Start extends Application
         Inventory inventory = new Inventory(game.getGamePlan());
         controller.init(game);
         primaryStage.show();
-
     }
 
 }
