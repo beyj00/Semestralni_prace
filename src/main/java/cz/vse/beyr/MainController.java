@@ -1,13 +1,11 @@
 package cz.vse.beyr;
 
 
-import com.sun.xml.internal.ws.util.StringUtils;
 import cz.vse.beyr.model.*;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -22,9 +20,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
-import sun.security.tools.keytool.Main;
-
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collection;
 import java.util.Set;
@@ -68,13 +63,9 @@ public class MainController {
         updateItems();
         updateArea();
         updatePerson();
-       // updateQuit();
+        updateInventory();
     }
-    /*private void updateQuit() {
-        quit.setOnAction(event -> {
-            executeCommand("konec ");
-        });
-    }*/
+
     private void updateArea() {
          InputStream stream = getClass().getClassLoader().getResourceAsStream(getCurrentArea().getName() + ".jpg");
          Image img = new Image(stream);
@@ -171,14 +162,34 @@ public class MainController {
 
     }
 
-/*
+
     private void updateInventory() {
-        String inv = showInventory.getName();
+        Inventory inv = game.getInventory();
+        Collection<Item> inventoryItems = inv.getInventory().values();
         inventory.getChildren().clear();
-        Label inventroyLabel = new Label(inv);
-        getLabel(inv, inventroyLabel);
-        inventory.getChildren().add()
-    }*/
+
+        for (Item item : inventoryItems) {
+            String itemName = item.getName();
+            Label itemLabel = new Label(itemName);
+
+            itemLabel.setTooltip(new Tooltip(item.getDescription()));
+
+            getLabel(itemName, itemLabel);
+
+            itemLabel.setOnMouseClicked(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent mouseEvent) {
+                    if(mouseEvent.getButton().equals(MouseButton.PRIMARY)) {
+                        executeCommand("poloz " +itemName);
+                    }else if(mouseEvent.getButton().equals(MouseButton.SECONDARY)) {
+                        executeCommand("prozkoumej "+itemName);
+                    }
+                }
+            });
+
+            inventory.getChildren().add(itemLabel);
+        }
+    }
 
 
     private void executeCommand(String command) {
@@ -218,7 +229,7 @@ public class MainController {
         primaryStage.setTitle("Help");
         primaryStage.show();
     }
-    @FXML
+
     public void quit(ActionEvent actionEvent) {
         Platform.exit();
     }

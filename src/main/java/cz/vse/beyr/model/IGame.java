@@ -61,5 +61,6 @@ public interface IGame
      */
     GamePlan getGamePlan();
 
+    Inventory getInventory();
 
 }
