@@ -71,7 +71,7 @@ public class CommandKill implements ICommand
 
         if (!inventory.isWeaponInInventory())
         {
-            this.isLose = isLose;
+            plan.isLose = true;
         }
 
         return "Byl jsi zabit při souboji!";

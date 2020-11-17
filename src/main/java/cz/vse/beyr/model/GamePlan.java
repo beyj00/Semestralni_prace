@@ -24,7 +24,7 @@ package cz.vse.beyr.model;
 public class GamePlan
 {
     private static final String FINAL_LOCATION_NAME = "anglie";
-    private boolean isLose;
+    public boolean isLose = false;
     
     private Area currentArea;
     

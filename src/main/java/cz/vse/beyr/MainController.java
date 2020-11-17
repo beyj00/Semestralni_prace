@@ -64,6 +64,7 @@ public class MainController {
         updateArea();
         updatePerson();
         updateInventory();
+        updateGameOver();
     }
 
     private void updateArea() {
@@ -109,8 +110,6 @@ public class MainController {
         }
 
     }
-
-
     private void updateItems() {
         Collection<Item> itemList = getCurrentArea().getItemList().values();
         items.getChildren().clear();
@@ -161,9 +160,11 @@ public class MainController {
         }
 
     }
-
-
     private void updateInventory() {
+        if (game.getGamePlan().isDefeated()) {
+
+        }
+
         Inventory inv = game.getInventory();
         Collection<Item> inventoryItems = inv.getInventory().values();
         inventory.getChildren().clear();
@@ -188,6 +189,23 @@ public class MainController {
             });
 
             inventory.getChildren().add(itemLabel);
+        }
+    }
+    private void updateGameOver() {
+        if (game.isGameOver()) {
+            if(game.getGamePlan().isDefeated()){
+                InputStream stream = getClass().getClassLoader().getResourceAsStream("prohral.jpg");
+                Image img = new Image(stream);
+                background.setImage(img);
+                background.fitHeightProperty().bind(stackpane.heightProperty());
+                background.fitWidthProperty().bind(stackpane.widthProperty());
+                textOutput.appendText(game.getEpilogue());
+                items.getChildren().clear();
+                exits.getChildren().clear();
+                persons.getChildren().clear();
+                inventory.getChildren().clear();
+            }
+            textOutput.appendText(game.getEpilogue());
         }
     }
 

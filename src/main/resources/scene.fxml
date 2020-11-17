@@ -9,26 +9,33 @@
     <ImageView fx:id="background" pickOnBounds="true" preserveRatio="false" smooth="false" />
     <BorderPane prefHeight="400.0" prefWidth="600.0">
         <top>
-      <VBox prefHeight="133.0" prefWidth="100.0" spacing="5" BorderPane.alignment="CENTER" >
+      <VBox prefHeight="133.0" prefWidth="100.0" spacing="5" BorderPane.alignment="CENTER">
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+              <items>
+                <Button mnemonicParsing="false" text="Nová hra" onAction="#restart"/>
+                  <Button mnemonicParsing="false" text="Konec hry" onAction="#quit"/>
+                  <Button mnemonicParsing="false" text="Nápověda" onAction="#help"/>
+              </items>
+            </ToolBar>
           <MenuBar fx:id="menu">
-            <Menu text="Game">
-                <MenuItem fx:id="reset" text="Restart game" onAction="#restart"/>
-                <MenuItem fx:id="quit" text="Quit game" onAction="#quit"/>
+            <Menu text="Hra">
+                <MenuItem fx:id="reset" onAction="#restart" text="Nová hra" />
+                <MenuItem fx:id="quit" onAction="#quit" text="Konec hry" />
           </Menu>
-              <Menu text="File">
-                <MenuItem fx:id="help" text="Help" onAction="#help"/>
+              <Menu text="Soubory">
+                <MenuItem fx:id="help" onAction="#help" text="Nápověda" />
               </Menu>
           </MenuBar>
           <VBox styleClass="muj-box">
-       <Label fx:id="locationName" alignment="CENTER" contentDisplay="CENTER" textAlignment="CENTER" styleClass="muj-box">Nazev</Label>
-       <Label fx:id="locationDescription" alignment="CENTER" contentDisplay="CENTER" text="Popis" textAlignment="CENTER" styleClass="muj-box">Popis</Label>
+       <Label fx:id="locationName" alignment="CENTER" contentDisplay="CENTER" styleClass="muj-box" textAlignment="CENTER">Nazev</Label>
+       <Label fx:id="locationDescription" alignment="CENTER" contentDisplay="CENTER" styleClass="muj-box" text="Popis" textAlignment="CENTER">Popis</Label>
           </VBox>
       </VBox>
    </top>
             <right>
                 <VBox spacing="20">
                 <!--Vychody-->
-                    <VBox styleClass="muj-box" >
+                    <VBox styleClass="muj-box">
                         <Label styleClass="nadpis">
                             <text>Vychody</text>
                             <font>
