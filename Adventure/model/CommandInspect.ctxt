@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CommandInspect
+comment0.text=\r\n\ Tato\ t\u0159\u00EDda\ p\u0159edstavuje\ hern\u00ED\ logiku\ pro\ prozkoum\u00E1n\u00ED\ p\u0159edm\u011Btu\ v\ aktu\u00E1ln\u00ED\ lokaci\ nebo\ v\ invent\u00E1\u0159i.\r\n
+comment1.params=plan\ inventory
+comment1.target=CommandInspect(GamePlan,\ Inventory)
+comment1.text=\r\n\ Konstruktor\ t\u0159\u00EDdy.\r\n\r\n\ @param\ plan\ odkaz\ na\ hern\u00ED\ pl\u00E1n\ s\ aktu\u00E1ln\u00EDm\ stavem\ hry\r\n\ @param\ inventory\ odkaz\ na\ invent\u00E1\u0159\ s\ aktu\u00E1ln\u00EDmi\ p\u0159edm\u011Bty\r\n
+comment2.params=parameters
+comment2.target=java.lang.String\ process(java.lang.String[])
+comment2.text=\r\n\ Metoda\ nejprve\ zji\u0161\u0165uje\ spr\u00E1vnost\ parametru,\ pot\u00E9,\ zda-li\ po\u017Eadovan\u00FD\ p\u0159edm\u011Bt\ je\ v\ aktu\u00E1ln\u00ED\ lokaci\ nebo\ v\ invent\u00E1\u0159i.\r\n\ Pokud\ je\ dan\u00FD\ p\u0159edm\u011Bt\ v\ invent\u00E1\u0159i\ nebo\ v\ aktu\u00E1ln\u00ED\ lokaci,\ metoda\ vr\u00E1t\u00ED\ popis\ p\u0159edm\u011Btu\ (ggetDescription).\r\n\ \r\n\ @return\ vrac\u00ED\ popis\ zkouman\u00E9ho\ p\u0159edm\u011Btu\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ Metoda\ vrac\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\ tj.&nbsp;\ slovo\ {@value\ NAME}.\r\n\r\n\ @return\ n\u00E1zev\ p\u0159\u00EDkazu\r\n
+numComments=4

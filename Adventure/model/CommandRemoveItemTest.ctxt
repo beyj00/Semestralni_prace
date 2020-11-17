@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=CommandRemoveItemTest
+comment0.text=\r\n\ Testovac\u00ED\ t\u0159\u00EDda\ {@code\ CommandRemoveItemTest}\ slou\u017E\u00ED\ ke\ komplexn\u00EDmu\ otestov\u00E1n\u00ED\r\n\ t\u0159\u00EDdy\ {@link\ CommandRemoveItemTest}.\r\n\r\n\ @author\ \ Jakub\ Beyr\r\n\ @version\ LS\ 2020\r\n
+comment1.params=
+comment1.target=void\ setUp()
+comment2.params=
+comment2.target=void\ testCommandRemoveItem()
+numComments=3

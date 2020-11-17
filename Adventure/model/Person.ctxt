@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Person
+comment0.text=\r\n\ T\u0159\u00EDda\ p\u0159edstavuje\ implementaci\ osob\ (metady,\ parametry)\ \ \r\n\ \r\n\ @author\ Jakub\ Beyr\r\n\ @version\ LS\ 2020\r\n
+comment1.params=name\ speech\ mortal
+comment1.target=Person(java.lang.String,\ java.lang.String,\ boolean)
+comment1.text=\r\n\ Metoda\ implementuje\ parametry\ 'name'\ (jm\u00E9no\ osoby),\ 'speech'\ (monolog\ osoby),\ \r\n\ 'mortal'\ (zda\ li\ je\ mo\u017En\u00E9\ osobu\ zab\u00EDt\ true/false)\r\n\ @param\ name\ jm\u00E9no\ osoby\r\n\ @param\ speech\ prolog\ osoby\r\n\ @param\ mortal\ smrtelnost\ osoby\r\n
+comment2.params=name\ speech
+comment2.target=Person(java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Metoda\ nastavuje\ parametr\ 'mortal'\ \ na\ false,\ aby\ se\ nemusel\ poka\u017Ed\u011B\ zad\u00E1vat\ p\u0159i\ \r\n\ vytv\u00E1\u0159en\u00ED\ ka\u017Ed\u00E9\ osoby,\ proto\u017Ee\ v\u011Bt\u0161ina\ osob\ nejde\ zab\u00EDt.\r\n\ @param\ name\ jm\u00E9no\ osoby\r\n\ @param\ speech\ prolog\ osoby\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ Metoda\ vrac\u00ED\ jm\u00E9no\ p\u0159edm\u011Btu\r\n\ @return\ n\u00E1zev\ osoby\r\n
+comment4.params=
+comment4.target=java.lang.String\ getSpeech()
+comment4.text=\r\n\ Metoda\ vrac\u00ED\ monolog\ osoby\r\n\ \ @return\ prolog\ osoby\r\n
+comment5.params=speech
+comment5.target=void\ setSpeech(java.lang.String)
+comment5.text=\r\n\ Metoda\ nastavuje\ monolog\ osoby\r\n\ @param\ speech\ prolog\ osoby\r\n
+comment6.params=
+comment6.target=boolean\ isMortal()
+comment6.text=\r\n\ Metoda\ vrac\u00ED,\ zda-li\ lze\ osobu\ zab\u00EDt\r\n\ @return\ smrtelnost\ osoby\r\n
+comment7.params=mortal
+comment7.target=void\ setMortal(boolean)
+comment7.text=\r\n\ Metoda\ nastavuje,\ zda-li\ lze\ osobu\ zab\u00EDt\r\n\ @param\ mortal\ smrtelnost\ osoby\r\n
+numComments=8

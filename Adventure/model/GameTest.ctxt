@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=GameTest
+comment0.text=\r\n\ Testovac\u00ED\ t\u0159\u00EDda\ pro\ komplexn\u00ED\ otestov\u00E1n\u00ED\ hern\u00EDho\ p\u0159\u00EDb\u011Bhu.\r\n\r\n\ @author\ Jarmila\ Pavl\u00ED\u010Dkov\u00E1\r\n\ @author\ Jan\ \u0158\u00EDha\r\n\ @version\ LS\ 2020\r\n
+comment1.params=
+comment1.target=void\ setUp()
+comment2.params=
+comment2.target=void\ testPlayerQuit()
+comment3.params=
+comment3.target=void\ testPlayerWinWithoutKill()
+comment4.params=
+comment4.target=void\ testPlayerWinWithKill()
+comment5.params=
+comment5.target=void\ testPlayerLose()
+numComments=6

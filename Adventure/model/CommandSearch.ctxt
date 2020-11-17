@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CommandSearch
+comment0.text=\r\n\ Tato\ t\u0159\u00EDda\ m\u00E1\ na\ starost\ hern\u00ED\ logiku\ prohled\u00E1n\u00ED\ a\ vyps\u00E1n\u00ED\ p\u0159edm\u011Bt\u016F\ v\ aktu\u00E1ln\u00ED\ lokaci.\r\n
+comment1.params=plan
+comment1.target=CommandSearch(GamePlan)
+comment1.text=\r\n\ Konstruktor\ t\u0159\u00EDdy.\r\n\ @param\ plan\ odkaz\ na\ hern\u00ED\ pl\u00E1n\ s\ aktu\u00E1ln\u00EDm\ stavem\ hry\r\n\ \r\n
+comment2.params=parameters
+comment2.target=java.lang.String\ process(java.lang.String[])
+comment2.text=\r\n\ Metoda\ provad\u00ED\ cyklus,\ ve\ kter\u00E9m\ se\ zji\u0161\u0165uje\ p\u0159\u00EDtomnost\ p\u0159edm\u011Btu\ v\ aktu\u00E1ln\u00ED\ lokaci.\r\n\ Nejprve\ se\ vytvo\u0159\u00ED\ textov\u00FD\ \u0159et\u011Bzec\ itemNames\ s\ hodnotou\ "P\u0159edm\u011Bty"\r\n\ Pot\u00E9\ se\ prov\u00E1d\u00ED\ cyklus,\ kter\u00FD\ proj\u00ED\u017Ed\u00ED\ p\u0159edm\u011Bty\ v\ aktu\u00E1ln\u00ED\ lokaci,\ n\u00E1zev\ p\u0159edm\u011Btu\ se\ p\u0159ep\u00ED\u0161e\r\n\ do\ Stringu\ itemName\ spole\u0161n\u011B\ s\ mezerou\ ("\ ")\ a\ tento\ \u0159et\u011Bzec\ se\ p\u0159id\u00E1\ do\ itemNames.\r\n\ Nakonec,\ kdy\u017E\ u\u017E\ v\ lokaci\ nejsou\ \u017E\u00E1dn\u00E9\ dal\u0161\u00ED\ p\u0159edm\u011Bty,\ cyklus\ se\ ukon\u010D\u00ED\ a\ vyp\u00ED\u0161e\ se\ obsah\ itemNames.\r\n\ \r\n\ @return\ vrac\u00ED\ p\u0159edm\u011Bty\ v\ aktu\u00E1ln\u00ED\ lokaci\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ Metoda\ vrac\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\ tj.&nbsp;\ slovo\ {@value\ NAME}.\r\n\r\n\ @return\ n\u00E1zev\ p\u0159\u00EDkazu\r\n
+numComments=4

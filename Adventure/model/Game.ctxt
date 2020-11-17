@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Game
+comment0.text=\r\n\ Hlavn\u00ED\ t\u0159\u00EDda\ logiky\ aplikace.\ T\u0159\u00EDda\ vytv\u00E1\u0159\u00ED\ instanci\ t\u0159\u00EDdy\ {@link\ GamePlan},\r\n\ kter\u00E1\ inicializuje\ lokace\ hry,\ a\ vytv\u00E1\u0159\u00ED\ seznam\ platn\u00FDch\ p\u0159\u00EDkaz\u016F\ a\ instance\r\n\ t\u0159\u00EDd\ prov\u00E1d\u011Bj\u00EDc\u00EDch\ jednotliv\u00E9\ p\u0159\u00EDkazy.\r\n\r\n\ B\u011Bhem\ hry\ t\u0159\u00EDda\ vypisuje\ uv\u00EDtac\u00ED\ a\ ukon\u010Dovac\u00ED\ texty\ a\ vyhodnocuje\ jednotliv\u00E9\r\n\ p\u0159\u00EDkazy\ zadan\u00E9\ u\u017Eivatelem.\r\n\r\n\ @author\ Michael\ K\u00F6lling\r\n\ @author\ Lubo\u0161\ Pavl\u00ED\u010Dek\r\n\ @author\ Jarmila\ Pavl\u00ED\u010Dkov\u00E1\r\n\ @author\ Jan\ \u0158\u00EDha\r\n\ @author\ Jakub\ Beyr\r\n\ @version\ LS\ 2020\r\n
+comment1.params=
+comment1.target=Game()
+comment1.text=\r\n\ Konstruktor\ t\u0159\u00EDdy.\ Vytvo\u0159\u00ED\ hru,\ inicializuje\ hern\u00ED\ pl\u00E1n\ udr\u017Euj\u00EDc\u00ED\r\n\ aktu\u00E1ln\u00ED\ stav\ hry\ a\ seznam\ platn\u00FDch\ p\u0159\u00EDkaz\u016F.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getPrologue()
+comment2.text=\r\n\ {@inheritDoc}\r\n
+comment3.params=
+comment3.target=java.lang.String\ getEpilogue()
+comment3.text=\r\n\ {@inheritDoc}\r\n
+comment4.params=
+comment4.target=boolean\ isGameOver()
+comment4.text=\r\n\ {@inheritDoc}\r\n
+comment5.params=line
+comment5.target=java.lang.String\ processCommand(java.lang.String)
+comment5.text=\r\n\ {@inheritDoc}\r\n
+comment6.params=
+comment6.target=GamePlan\ getGamePlan()
+comment6.text=\r\n\ {@inheritDoc}\r\n
+comment7.params=gameOver
+comment7.target=void\ setGameOver(boolean)
+comment7.text=\r\n\ Metoda\ nastav\u00ED\ p\u0159\u00EDznak\ indikuj\u00EDc\u00ED,\ \u017Ee\ nastal\ konec\ hry.\ Metodu\r\n\ vyu\u017E\u00EDv\u00E1\ t\u0159\u00EDda\ {@link\ CommandTerminate},\ mohou\ ji\ ale\ pou\u017E\u00EDt\r\n\ i\ dal\u0161\u00ED\ implementace\ rozhran\u00ED\ {@link\ ICommand}.\r\n\r\n\ @param\ gameOver\ p\u0159\u00EDznak\ indikuj\u00EDc\u00ED,\ zda\ hra\ ji\u017E\ skon\u010Dila\r\n
+numComments=8

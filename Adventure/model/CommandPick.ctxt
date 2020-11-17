@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CommandPick
+comment0.text=\r\n\ T\u0159\u00EDda\ implementuj\u00EDc\u00ED\ p\u0159\u00EDkaz\ pro\ sebr\u00E1n\u00ED\ p\u0159edm\u011Btu\ a\ vlo\u017Een\u00ED\ do\ invent\u00E1\u0159e.\r\n\ \r\n\ @author\ Jakub\ Beyr\r\n\ @version\ LS\ 2020\r\n
+comment1.params=plan\ inventory
+comment1.target=CommandPick(GamePlan,\ Inventory)
+comment1.text=\r\n\ Konstruktor\ t\u0159\u00EDdy.\r\n\ @param\ inventory\ invent\u00E1\u0159\r\n\ @param\ plan\ odkaz\ na\ hern\u00ED\ pl\u00E1n\ s\ aktu\u00E1ln\u00EDm\ stavem\ hry\r\n
+comment2.params=parameters
+comment2.target=java.lang.String\ process(java.lang.String[])
+comment2.text=\r\n\ Metoda\ nejd\u0159\u00EDve\ zjist\u00ED\ jestli\ je\ zadan\u00FD\ pouze\ jeden\ parametr.\ Pot\u00E9\ se\ zjist\u00ED,\ zadan\u00FD\ p\u0159edm\u011Bt\ je\ v\ aktu\u00E1ln\u00ED\ lokaci.\r\n\ Pokud\ je\ zadan\u00FD\ p\u0159edm\u011Bt\ v\ aktu\u00E1ln\u00ED\ lokaci,\ ov\u011B\u0159\u00ED\ se,\ jesstli\ je\ mo\u017En\u00E9\ p\u0159edm\u011Bt\ sebrat.\ Nakonec\ se\ ov\u011B\u0159uje,\ jestli\ se\ \r\n\ p\u0159edm\u011Bt\ p\u0159idal\ do\ invent\u00E1\u0159e,\ pokud\ se\ p\u0159idal\ do\ invent\u00E1\u0159e\ (deleteItem\ z\u016Fstane\ true),\ znamen\u00E1\ to,\ \u017Ee\ je\ v\ invent\u00E1\u0159i\ m\u00EDsto\ a\ p\u0159edm\u011Bt\ se\ odstran\u00ED\r\n\ z\ aktu\u00E1ln\u00ED\ lokace,pokud\ se\ do\ invent\u00E1\u0159e\ nep\u0159id\u00E1\ (deleteItem\ se\ nastav\u00ED\ na\ false),\ znamen\u00E1\ to,\ \u017Ee\ invent\u00E1\u0159\ je\ pln\u00FD.\r\n\ \r\n\ @return\ vrac\u00ED\ text,\ jestli\ a\ jak\u00FD\ p\u0159edm\u011Bt\ byl\ sebr\u00E1n\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ Metoda\ vrac\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\ tj.&nbsp;\ slovo\ {@value\ NAME}.\r\n\r\n\ @return\ n\u00E1zev\ p\u0159\u00EDkazu\r\n
+numComments=4

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CommandHelp
+comment0.text=\r\n\ T\u0159\u00EDda\ implementuj\u00EDc\u00ED\ p\u0159\u00EDkaz\ pro\ zobrazen\u00ED\ dostupn\u00FDch\ p\u0159\u00EDkaz\u016F\ ke\ h\u0159e.\r\n\r\n\ @author\ Jarmila\ Pavl\u00ED\u010Dkov\u00E1\r\n\ @author\ Lubo\u0161\ Pavl\u00ED\u010Dek\r\n\ @author\ Jan\ \u0158\u00EDha\r\n\ @version\ LS\ 2020\r\n
+comment1.params=listOfCommands
+comment1.target=CommandHelp(ListOfCommands)
+comment1.text=\r\n\ Konstruktor\ t\u0159\u00EDdy.\r\n\r\n\ @param\ listOfCommands\ odkaz\ na\ seznam\ p\u0159\u00EDkaz\u016F,\ kter\u00E9\ je\ mo\u017En\u00E9\ ve\ h\u0159e\ pou\u017E\u00EDt\r\n
+comment2.params=parameters
+comment2.target=java.lang.String\ process(java.lang.String[])
+comment2.text=\r\n\ Metoda\ vypisuje\ vcelku\ primitivn\u00ED\r\n\ zpr\u00E1vu\ o\ seznamu\ dostupn\u00FDch\ p\u0159\u00EDkaz\u016F,\ kter\u00E9\ m\u016F\u017Ee\ hr\u00E1\u010D\r\n\ pou\u017E\u00EDvat.\r\n\r\n\ @param\ parameters\ parametry\ p\u0159\u00EDkazu\ <i>(aktu\u00E1ln\u011B\ se\ ignoruj\u00ED)</i>\r\n\ @return\ n\u00E1pov\u011Bda,\ kter\u00E1\ se\ vyp\u00ED\u0161e\ na\ konzoli\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ Metoda\ vrac\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\ tj.&nbsp;\ slovo\ {@value\ NAME}.\r\n\r\n\ @return\ n\u00E1zev\ p\u0159\u00EDkazu\r\n
+numComments=4

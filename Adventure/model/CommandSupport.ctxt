@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=CommandSupport
+comment0.text=\r\n\ T\u0159\u00EDda\ implementuj\u00EDc\u00ED\ p\u0159\u00EDkaz\ pro\ zobrazen\u00ED\ n\u00E1pov\u011Bdy\ ke\ h\u0159e.\r\n\r\n\ @author\ Jarmila\ Pavl\u00ED\u010Dkov\u00E1\r\n\ @author\ Lubo\u0161\ Pavl\u00ED\u010Dek\r\n\ @author\ Jan\ \u0158\u00EDha\r\n\ @author\ Jakub\ Beyr\r\n\ @version\ LS\ 2020\r\n
+comment1.params=parameters
+comment1.target=java.lang.String\ process(java.lang.String[])
+comment1.text=\r\n\ Metoda\ vrac\u00ED\ obecnou\ n\u00E1pov\u011Bdu\ ke\ h\u0159e.\ Nyn\u00ED\ vypisuje,\ co\ hr\u00E1\u010D\ mus\u00ED\ ud\u011Blat,\ \r\n\ aby\ mohl\ hru\ vyhr\u00E1t.\ \r\n\ @param\ parameters\ parametry\ p\u0159\u00EDkazu\ <i>(aktu\u00E1ln\u011B\ se\ ignoruj\u00ED)</i>\r\n\ @return\ n\u00E1pov\u011Bda,\ kter\u00E1\ se\ vyp\u00ED\u0161e\ na\ konzoli\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ Metoda\ vrac\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\ tj.&nbsp;\ slovo\ {@value\ NAME}.\r\n\r\n\ @return\ n\u00E1zev\ p\u0159\u00EDkazu\r\n
+numComments=3

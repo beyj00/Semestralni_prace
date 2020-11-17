@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CommandRemoveItem
+comment0.text=\r\n\ T\u0159\u00EDda\ p\u0159edstavuje\ hern\u00ED\ logiku\ pro\ odstran\u011Bn\u00ED\ p\u0159edm\u011Btu\ z\ invent\u00E1\u0159e\ a\ um\u00EDst\u011Bn\u00ED\ p\u0159edm\u011Btu\ do\ aktu\u00E1ln\u00ED\ lokace.\r\n
+comment1.params=inventory\ plan
+comment1.target=CommandRemoveItem(Inventory,\ GamePlan)
+comment1.text=\r\n\ Konstruktor\ t\u0159\u00EDdy.\r\n\r\n\ @param\ plan\ odkaz\ na\ hern\u00ED\ pl\u00E1n\ s\ aktu\u00E1ln\u00EDm\ stavem\ hry\r\n\ @param\ inventory\ odkaz\ na\ invent\u00E1\u0159\ s\ aktu\u00E1ln\u00EDmi\ p\u0159edm\u011Bty\r\n
+comment2.params=parameters
+comment2.target=java.lang.String\ process(java.lang.String[])
+comment2.text=\r\n\ Tato\ metoda\ zkontroluje,\ zda-li\ byl\ zadan\u00FD\ spr\u00E1vn\u00FD\ parametr.\ Pot\u00E9\ se\ parametr\ ulo\u017E\u00ED\ do\ prom\u011Bnn\u00E9\ itemName\ a\ zjist\u00ED\ se,\ v\ jak\u00E9\ lokaci\ se\ nach\u00E1z\u00EDme.\ \r\n\ Pot\u00E9\ se\ zji\u0161\u0165uje,\ jestli\ dan\u00FD\ "\u00FAkolov\u00FD"\ p\u0159edm\u011Bt\ m\u00E1me\ v\ invent\u00E1\u0159i\ a\ pokladame\ ho\ v\ po\u017Eadovane\ lokaci.\ Pokud\ je\ toto\ spln\u011Bno,\ p\u0159edm\u011Bt\ se\ vyma\u017Ee\ a\ \r\n\ vytvo\u0159\u00ED\ se\ nov\u00FD\ p\u0159edm\u011Bt\ a\ nakonec\ se\ vyp\u00ED\u0161e\ text.\ \r\n\ Pokud\ s\ enejedn\u00E1\ o\ "\u00FAkolov\u00FD"\ p\u0159edm\u011Bt,\ provede\ se\ metoda\ removeItem\ ze\ t\u0159\u00EDdy\ inventory,\ kde\ jsou\ zaji\u0161t\u011Bny\ pot\u0159ebn\u00E9\ podm\u00EDnky.\r\n\ \r\n\ @return\ metoda\ inventory,removeItem(itemName)\ nebo\ p\u0159\u00EDslu\u0161n\u00FD\ text\ \r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ Metoda\ vrac\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\ tj.&nbsp;\ slovo\ {@value\ NAME}.\r\n\r\n\ @return\ n\u00E1zev\ p\u0159\u00EDkazu\r\n
+numComments=4

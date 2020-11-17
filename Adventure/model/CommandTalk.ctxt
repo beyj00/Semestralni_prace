@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=CommandTalk
+comment0.text=\r\n\ T\u0159\u00EDda\ prezentuje\ rozhovor\ s\ postavou.\ Ka\u017Ed\u00E1\ postava\ m\u00E1\ p\u0159i\u0159azen\ monolog,\ kter\u00FD\ ve\ vyp\u00ED\u0161e.\r\n\ Kontroluje\ se,\ zda\ byl\ zadan\u00FD\ pr\u00E1v\u011B\ jeden\ a\ spr\u00E1vn\u00FD\ parametr.\r\n\ \r\n\ @author\ Jakub\ Beyr\r\n\ @version\ LS\ 2020\r\n
+comment1.params=plan
+comment1.target=CommandTalk(GamePlan)
+comment1.text=\r\n\ Konstruktor\ t\u0159\u00EDdy.\r\n\r\n\ @param\ plan\ odkaz\ na\ hern\u00ED\ pl\u00E1n\ s\ aktu\u00E1ln\u00EDm\ stavem\ hry\r\n
+comment2.params=parameters
+comment2.target=java.lang.String\ process(java.lang.String[])
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ Metoda\ vrac\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\ tj.&nbsp;\ slovo\ {@value\ NAME}.\r\n\r\n\ @return\ n\u00E1zev\ p\u0159\u00EDkazu\r\n
+numComments=4

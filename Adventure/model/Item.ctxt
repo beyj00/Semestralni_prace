@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Item
+comment0.text=\r\n\ T\u0159\u00EDda\ p\u0159edstavuje\ implementaci\ osob\ (metady,\ parametry)\ \ \r\n\ \r\n\ @author\ Jakub\ Beyr\r\n\ @version\ LS\ 2020\r\n
+comment1.params=name\ description\ moveable
+comment1.target=Item(java.lang.String,\ java.lang.String,\ boolean)
+comment1.text=\r\n\ Metoda\ implementuje\ parametry\ 'name'\ (n\u00E1zev\ p\u0159edm\u011Btu),\ 'description'\ (stru\u010Dn\u00FD\ popis\ p\u0159edm\u011Btu),\ \r\n\ 'moveable'\ (zda\ li\ je\ mo\u017En\u00E9\ p\u0159edm\u011Bt\ sebrat\ true/false)\r\n\ \r\n\ @param\ name\ n\u00E1zev\ p\u0159edm\u011Btu\r\n\ @param\ description\ popis\ p\u0159edm\u011Btu\r\n\ @param\ moveable\ zda-li\ je\ mo\u017En\u00E9\ p\u0159edm\u011Bt\ sebrat\r\n
+comment2.params=name\ description
+comment2.target=Item(java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Metoda\ nastavuje\ parametr\ 'description'\ \ na\ true,\ aby\ se\ nemusel\ poka\u017Ed\u011B\ zad\u00E1vat\ p\u0159i\ \r\n\ vytv\u00E1\u0159en\u00ED\ p\u0159edm\u011Btu,\ pokud\ nen\u00ED\ hodnota\ false.\r\n\ \r\n\ @param\ name\ n\u00E1zev\ p\u0159edm\u011Btu\r\n\ @param\ description\ popis\ p\u0159edm\u011Btu\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ Metoda\ vrac\u00ED\ jm\u00E9no\ p\u0159edm\u011Btu\r\n\ \r\n\ @return\ n\u00E1zev\ p\u0159edm\u011Btu\r\n
+comment4.params=
+comment4.target=java.lang.String\ getDescription()
+comment4.text=\r\n\ Metoda\ vrac\u00ED\ popis\ p\u0159edm\u011Btu\r\n\ \r\n\ @return\ popis\ p\u0159edm\u011Btu\r\n
+comment5.params=description
+comment5.target=void\ setDescription(java.lang.String)
+comment5.text=\r\n\ Metoda\ nastavuje\ popis\ p\u0159edm\u011Btu\r\n\ \r\n\ @param\ description\ popis\ p\u0159edm\u011Btu\r\n
+comment6.params=
+comment6.target=boolean\ isMoveable()
+comment6.text=\r\n\ Metoda\ vrac\u00ED\ pohyblivost\ p\u0159edm\u011Btu\r\n\ \r\n\ @return\ moveable\ zda-li\ je\ mo\u017En\u00E9\ p\u0159edm\u011Bt\ sebrat\r\n
+comment7.params=moveable
+comment7.target=void\ setMoveable(boolean)
+comment7.text=\r\n\ Metoda\ nastavuje\ pohyblivost\ p\u0159edm\u011Btu\r\n\ \r\n\ @param\ moveable\ zda-li\ je\ mo\u017En\u00E9\ p\u0159edm\u011Bt\ sebrat\r\n
+numComments=8

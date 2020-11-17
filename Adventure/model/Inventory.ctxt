@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Inventory
+comment0.text=\r\n\ Tato\ t\u0159\u00EDda\ p\u0159edstavuje\ logiku\ vytvo\u0159en\u00ED\ invent\u00E1\u0159e\ a\ chov\u00E1n\u00ED\ invent\u00E1\u0159e\ b\u011Bhem\ hry\r\n
+comment1.params=gamePlan
+comment1.target=Inventory(GamePlan)
+comment1.text=\r\n\ Konstruktor\ t\u0159\u00EDdy.\r\n\ \r\n\ @param\ gamePlan\ hern\u00ED\ pl\u00E1n\r\n
+comment2.params=name\ item
+comment2.target=boolean\ addToInventory(java.lang.String,\ Item)
+comment2.text=\r\n\ P\u0159id\u00E1\ item\ do\ invent\u00E1\u0159e\ a\ kontroluje,\ jeslti\ se\ tam\ vejde.\r\n\ @param\ name\ n\u00E1zev\ p\u0159edm\u011Btu\r\n\ @param\ item\ p\u0159edm\u011Bt\r\n\ @return\ vraci\ false\ kdy\u017E\ je\ invent\u00E1\u0159\ pln\u00FD\ a\ true,\ pokud\ je\ do\ invent\u00E1\u0159e\ p\u0159id\u00E1n\r\n
+comment3.params=itemName
+comment3.target=java.lang.String\ removeItem(java.lang.String)
+comment3.text=\r\n\ Zji\u0161\u0165ujeme,\ jestli\ je\ dan\u00FD\ p\u0159edm\u011Bt\ v\ invent\u00E1\u0159i\ a\ jestli\ je\ mo\u017En\u00E9\ ho\ vymazat\ a\ n\u00E1sledn\u011B\ p\u0159idat\ do\ aktu\u00E1ln\u00ED\ oblasti\r\n\ \r\n\ @param\ itemName\ n\u00E1zev\ p\u0159edm\u011Btu\r\n\ @return\ vrac\u00ED,\ jestli\ je\ p\u0159edm\u011Bt\ v\ invent\u00E1\u0159i,\ nebo\ jestli\ byl\ vynd\u00E1n\r\n
+comment4.params=itemName
+comment4.target=boolean\ isInInventory(java.lang.String)
+comment4.text=\r\n\ \ Metoda\ ov\u011B\u0159uje,\ zda\ li\ je\ dan\u00FD\ p\u0159edm\u011Bt\ v\ invent\u00E1\u0159i.\r\n\ \ Cyklus\ proch\u00E1z\u00ED\ mapu\ inventoryMap\ a\ p\u0159i\ ka\u017Ed\u00E9m\ cyklu\ vr\u00E1t\u00ED\ item\ z\ mapy.\r\n\ \ Ov\u011B\u0159uje\ se,\ zda-li\ zadan\u00FD\ item\ je\ v\ invent\u00E1\u0159i\ nebo\ ne.\r\n\ \ \r\n\ \ @param\ itemName\ n\u00E1zev\ p\u0159edm\u011Btu\r\n\ \ @return\ vrac\u00ED,\ jestli\ je\ p\u0159edm\u011Bt\ v\ invent\u00E1\u0159i\r\n
+comment5.params=
+comment5.target=java.util.Map\ getInventory()
+comment5.text=\r\n\ @return\ invent\u00E1\u0159\r\n
+comment6.params=itemName
+comment6.target=Item\ getItem(java.lang.String)
+comment6.text=\r\n\ @param\ itemName\ n\u00E1zev\ p\u0159edm\u011Btu\r\n\ @return\ n\u00E1zev\ p\u0159edm\u011Btu\ v\ invent\u00E1\u0159i\r\n
+numComments=7

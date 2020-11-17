@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ListOfCommandsTest
+comment0.text=\r\n\ Testovac\u00ED\ t\u0159\u00EDda\ pro\ komplexn\u00ED\ otestov\u00E1n\u00ED\ t\u0159\u00EDdy\ {@link\ ListOfCommands}.\r\n\r\n\ @author\ Lubo\u0161\ Pavl\u00ED\u010Dek\r\n\ @author\ Jan\ \u0158\u00EDha\r\n\ @author\ Jakub\ Beyr\r\n\ @version\ LS\ 2020\r\n
+comment1.params=
+comment1.target=void\ setUp()
+comment2.params=
+comment2.target=void\ testAddAndGetCommand()
+comment3.params=
+comment3.target=void\ testCheckCommand()
+comment4.params=
+comment4.target=void\ testGetNames()
+numComments=5

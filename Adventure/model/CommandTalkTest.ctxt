@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=CommandTalkTest
+comment0.text=\r\n\ Testovac\u00ED\ t\u0159\u00EDda\ {@code\ CommandTalkTest}\ slou\u017E\u00ED\ ke\ komplexn\u00EDmu\ otestov\u00E1n\u00ED\r\n\ t\u0159\u00EDdy\ {@link\ CommandTalkTest}.\r\n\r\n\ @author\ \ Jakub\ Beyr\r\n\ @version\ LS\ 2020\r\n
+comment1.params=
+comment1.target=void\ setUp()
+comment1.text=\r\n\ Inicializace\ p\u0159edch\u00E1zej\u00EDc\u00ED\ spu\u0161t\u011Bn\u00ED\ ka\u017Ed\u00E9ho\ testu\ a\ p\u0159ipravuj\u00EDc\u00ED\ tzv.\r\n\ p\u0159\u00EDpravek\ (fixture),\ co\u017E\ je\ sada\ objekt\u016F,\ s\ nimi\u017E\ budou\ testy\ pracovat.\r\n
+comment2.params=
+comment2.target=void\ testSetUp()
+comment2.text=\r\n\ Test\ of\ the\ {@link\ \#setUp()}\ method\ preparing\ the\ test\ fixture.\r\n
+numComments=3

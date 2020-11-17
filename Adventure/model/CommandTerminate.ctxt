@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=CommandTerminate
+comment0.text=\r\n\ T\u0159\u00EDda\ implementuj\u00EDc\u00ED\ p\u0159\u00EDkaz\ pro\ ukon\u010Den\u00ED\ hry.\r\n\r\n\ @author\ Jarmila\ Pavl\u00ED\u010Dkov\u00E1\r\n\ @author\ Jan\ \u0158\u00EDha\r\n\ @version\ LS\ 2020\r\n
+comment1.params=game
+comment1.target=CommandTerminate(Game)
+comment1.text=\r\n\ Konstruktor\ t\u0159\u00EDdy.\r\n\r\n\ @param\ game\ odkaz\ na\ hru,\ kter\u00E1\ m\u00E1\ b\u00FDt\ p\u0159\u00EDkazem\ ukon\u010Dena\r\n
+comment2.params=parameters
+comment2.target=java.lang.String\ process(java.lang.String[])
+comment2.text=\r\n\ V\ p\u0159\u00EDpad\u011B,\ \u017Ee\ je\ metoda\ zavol\u00E1na\ bez\ parametr\u016F\ <i>(hr\u00E1\u010D\ na\ konzoli\ zad\u00E1\r\n\ pouze\ slovo\ {@value\ NAME})</i>,\ ukon\u010D\u00ED\ hru.\ Jinak\ vr\u00E1t\u00ED\ chybovou\ zpr\u00E1vu\r\n\ a\ hra\ pokra\u010Duje.\r\n\r\n\ @param\ parameters\ parametry\ p\u0159\u00EDkazu\ <i>(o\u010Dek\u00E1v\u00E1\ se\ pr\u00E1zdn\u00E9\ pole)</i>\r\n\ @return\ informace\ pro\ hr\u00E1\u010De,\ kter\u00E1\ se\ vyp\u00ED\u0161e\ na\ konzoli\r\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\r\n\ Metoda\ vrac\u00ED\ n\u00E1zev\ p\u0159\u00EDkazu\ tj.&nbsp;\ slovo\ {@value\ NAME}.\r\n\r\n\ @return\ n\u00E1zev\ p\u0159\u00EDkazu\r\n
+numComments=4

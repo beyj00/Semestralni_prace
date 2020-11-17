@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=IGame
+comment0.text=\r\n\ Rozhran\u00ED\ definuj\u00EDc\u00ED\ metody\ nutn\u00E9\ pro\ implementaci\ hry.\ Z\u00E1kladn\u00ED\ t\u0159\u00EDda\ p\u0159edstavuj\u00EDc\u00ED\r\n\ logiku\ hry\ mus\u00ED\ implementovat\ metody\ definovan\u00E9\ t\u00EDmto\ rozhran\u00EDm,\ je\ na\ n\u011B\ nav\u00E1zan\u00E9\r\n\ u\u017Eivatelsk\u00E9\ rozhran\u00ED.\r\n\r\n\ @author\ Michael\ K\u00F6lling\r\n\ @author\ Lubo\u0161\ Pavl\u00ED\u010Dek\r\n\ @author\ Jarmila\ Pavl\u00ED\u010Dkov\u00E1\r\n\ @author\ Jan\ \u0158\u00EDha\r\n\ @version\ LS\ 2020\r\n
+comment1.params=
+comment1.target=java.lang.String\ getPrologue()
+comment1.text=\r\n\ Metoda\ vrac\u00ED\ \u00FAvodn\u00ED\ text\ pro\ hr\u00E1\u010De,\ kter\u00FD\ se\ vyp\u00ED\u0161e\ na\ konzoli\ ihned\ po\ zah\u00E1jen\u00ED\r\n\ hry.\r\n\r\n\ @return\ \u00FAvodn\u00ED\ text\r\n
+comment2.params=
+comment2.target=java.lang.String\ getEpilogue()
+comment2.text=\r\n\ Metoda\ vrac\u00ED\ z\u00E1v\u011Bre\u010Dn\u00FD\ text\ pro\ hr\u00E1\u010De,\ kter\u00FD\ se\ vyp\u00ED\u0161e\ na\ konzoli\ po\ ukon\u010Den\u00ED\r\n\ hry.\ Metoda\ se\ zavol\u00E1\ pro\ v\u0161echna\ mo\u017En\u00E1\ ukon\u010Den\u00ED\ hry\ <i>(hr\u00E1\u010D\ vyhr\u00E1l,\ hr\u00E1\u010D\r\n\ prohr\u00E1l,\ hr\u00E1\u010D\ ukon\u010Dil\ hru\ p\u0159\u00EDkazem\ 'konec')</i>.\ Tyto\ stavy\ je\ vhodn\u00E9\ v\ metod\u011B\r\n\ rozli\u0161it.\r\n\r\n\ @return\ z\u00E1v\u011Bre\u010Dn\u00FD\ text\r\n
+comment3.params=
+comment3.target=boolean\ isGameOver()
+comment3.text=\r\n\ Metoda\ vrac\u00ED\ informaci,\ zda\ hra\ ji\u017E\ skon\u010Dila\ <i>(je\ jedno,\ jestli\ v\u00FDhrou,\r\n\ prohrou\ nebo\ p\u0159\u00EDkazem\ 'konec')</i>.\r\n\r\n\ @return\ {@code\ true},\ pokud\ hra\ ji\u017E\ skon\u010Dila;\ jinak\ {@code\ false}\r\n
+comment4.params=line
+comment4.target=java.lang.String\ processCommand(java.lang.String)
+comment4.text=\r\n\ Metoda\ zpracuje\ hern\u00ED\ p\u0159\u00EDkaz\ <i>(jeden\ \u0159\u00E1dek\ textu\ zadan\u00FD\ na\ konzoli)</i>.\r\n\ \u0158et\u011Bzec\ uveden\u00FD\ jako\ parametr\ se\ rozd\u011Bl\u00ED\ na\ slova.\ Prvn\u00ED\ slovo\ je\ pova\u017Eov\u00E1no\r\n\ za\ n\u00E1zev\ p\u0159\u00EDkazu,\ dal\u0161\u00ED\ slova\ za\ jeho\ parametry.\r\n\ <p>\r\n\ Metoda\ nejprve\ ov\u011B\u0159\u00ED,\ zda\ prvn\u00ED\ slovo\ odpov\u00EDd\u00E1\ hern\u00EDmu\ p\u0159\u00EDkazu\ <i>(nap\u0159.\r\n\ 'napoveda',\ 'konec',\ 'jdi'\ apod.)</i>.\ Pokud\ ano,\ spust\u00ED\ obsluhu\ tohoto\r\n\ p\u0159\u00EDkazu\ a\ zb\u00FDvaj\u00EDc\u00ED\ slova\ p\u0159ed\u00E1\ jako\ parametry.\r\n\r\n\ @param\ line\ text,\ kter\u00FD\ hr\u00E1\u010D\ zadal\ na\ konzoli\ jako\ p\u0159\u00EDkaz\ pro\ hru\r\n\ @return\ v\u00FDsledek\ zpracov\u00E1n\u00ED\ <i>(informace\ pro\ hr\u00E1\u010De,\ kter\u00E9\ se\ vyp\u00ED\u0161ou\ na\ konzoli)</i>\r\n
+comment5.params=
+comment5.target=GamePlan\ getGamePlan()
+comment5.text=\r\n\ Metoda\ vrac\u00ED\ odkaz\ na\ hern\u00ED\ pl\u00E1n\ <i>(objekt\ t\u0159\u00EDdy\ {@link\ GamePlan}\ udr\u017Euj\u00EDc\u00ED\r\n\ aktu\u00E1ln\u00ED\ stav\ hry)</i>.\ Vyu\u017E\u00EDv\u00E1\ se\ p\u0159edev\u0161\u00EDm\ v\ automatizovan\u00FDch\ testech.\r\n\r\n\ @return\ hern\u00ED\ pl\u00E1n\r\n
+numComments=6
