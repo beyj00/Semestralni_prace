@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="stackpane" stylesheets="styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.vse.beyr.MainController">
+    <ImageView fx:id="background" pickOnBounds="true" preserveRatio="false" smooth="false" />
+    <BorderPane prefHeight="400.0" prefWidth="600.0">
+        <top>
+      <VBox fx:id="topBox" prefHeight="133.0" prefWidth="100.0" spacing="0" BorderPane.alignment="CENTER">
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+              <items>
+                <Button mnemonicParsing="false" onAction="#restart" text="Nová hra" />
+                  <Button mnemonicParsing="false" onAction="#quit" text="Konec hry" />
+                  <Button mnemonicParsing="false" onAction="#help" text="Nápověda" />
+              </items>
+            </ToolBar>
+          <MenuBar fx:id="menu">
+            <Menu text="Hra">
+                <MenuItem fx:id="reset" onAction="#restart" text="Nová hra" />
+                <MenuItem fx:id="quit" onAction="#quit" text="Konec hry" />
+          </Menu>
+              <Menu text="Soubory">
+                <MenuItem fx:id="help" onAction="#help" text="Nápověda" />
+              </Menu>
+          </MenuBar>
+          <VBox styleClass="muj-box">
+       <Label fx:id="locationName" alignment="CENTER" contentDisplay="CENTER" styleClass="muj-box" textAlignment="CENTER">Nazev</Label>
+       <Label fx:id="locationDescription" alignment="CENTER" contentDisplay="CENTER" styleClass="muj-box" text="Popis" textAlignment="CENTER">Popis</Label>
+          </VBox>
+      </VBox>
+   </top>
+            <right>
+                <VBox fx:id="rightBox" spacing="20">
+                <!--Vychody-->
+                    <VBox styleClass="muj-box">
+                        <Label styleClass="nadpis">
+                            <text>Vychody</text>
+                            <font>
+                            <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <VBox fx:id="exits" spacing="5">
+                        <!--Sem se budou vkladat vychody-->
+                        </VBox>
+                    </VBox>
+                    <!--Osoby-->
+                    <VBox styleClass="muj-box">
+                        <Label>
+                            <text>Osoby</text>
+                        </Label>
+                        <VBox fx:id="persons">
+
+                        </VBox>
+                    </VBox>
+
+
+                </VBox>
+            </right>
+            <left>
+                <VBox fx:id="leftBox" spacing="20">
+                    <VBox spacing="10" styleClass="muj-box">
+                        <Label styleClass="nadpis">
+                            <text>
+                                Predmety
+                            </text>
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <VBox fx:id="items" spacing="5">
+                            <!--Sem se budou vkladat predmety v dane lokaci-->
+                        </VBox>
+                    </VBox>
+                    <VBox styleClass="muj-box">
+                        <Label styleClass="nadpis">
+                            <text>
+                                Batoh
+                            </text>
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <VBox fx:id="inventory" spacing="5">
+
+                        </VBox>
+                    </VBox>
+                </VBox>
+            </left>
+            <bottom>
+                <VBox fx:id="bottomBox">
+                    <TextArea fx:id="textOutput" editable="false" styleClass="muj-box" />
+                    <TextField fx:id="textInput" onKeyPressed="#onInputKeyPressed" styleClass="muj-box" />
+                </VBox>
+            </bottom>
+    </BorderPane>
+</StackPane>
