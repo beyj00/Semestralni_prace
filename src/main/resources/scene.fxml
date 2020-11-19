@@ -9,12 +9,12 @@
     <ImageView fx:id="background" pickOnBounds="true" preserveRatio="false" smooth="false" />
     <BorderPane prefHeight="400.0" prefWidth="600.0">
         <top>
-      <VBox prefHeight="133.0" prefWidth="100.0" spacing="5" BorderPane.alignment="CENTER">
+      <VBox fx:id="topBox" prefHeight="133.0" prefWidth="100.0" spacing="0" BorderPane.alignment="CENTER">
             <ToolBar prefHeight="40.0" prefWidth="200.0">
               <items>
-                <Button mnemonicParsing="false" text="Nová hra" onAction="#restart"/>
-                  <Button mnemonicParsing="false" text="Konec hry" onAction="#quit"/>
-                  <Button mnemonicParsing="false" text="Nápověda" onAction="#help"/>
+                <Button mnemonicParsing="false" onAction="#restart" text="Nová hra" />
+                  <Button mnemonicParsing="false" onAction="#quit" text="Konec hry" />
+                  <Button mnemonicParsing="false" onAction="#help" text="Nápověda" />
               </items>
             </ToolBar>
           <MenuBar fx:id="menu">
@@ -33,7 +33,7 @@
       </VBox>
    </top>
             <right>
-                <VBox spacing="20">
+                <VBox fx:id="rightBox" spacing="20">
                 <!--Vychody-->
                     <VBox styleClass="muj-box">
                         <Label styleClass="nadpis">
@@ -60,7 +60,7 @@
                 </VBox>
             </right>
             <left>
-                <VBox spacing="20">
+                <VBox fx:id="leftBox" spacing="20">
                     <VBox spacing="10" styleClass="muj-box">
                         <Label styleClass="nadpis">
                             <text>
@@ -90,7 +90,7 @@
                 </VBox>
             </left>
             <bottom>
-                <VBox>
+                <VBox fx:id="bottomBox">
                     <TextArea fx:id="textOutput" editable="false" styleClass="muj-box" />
                     <TextField fx:id="textInput" onKeyPressed="#onInputKeyPressed" styleClass="muj-box" />
                 </VBox>

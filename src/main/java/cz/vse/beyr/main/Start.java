@@ -4,7 +4,6 @@ package cz.vse.beyr.main;
 import cz.vse.beyr.MainController;
 import cz.vse.beyr.model.Game;
 import cz.vse.beyr.model.IGame;
-import cz.vse.beyr.model.Inventory;
 import cz.vse.beyr.textui.TextUI;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -44,7 +43,7 @@ public final class Start extends Application
             launch();
         }
     }
-
+    /** Metoda slouží ke spuštění grafické verze hry a propojení se souborem scene.fxml*/
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setFullScreen(true);
@@ -60,7 +59,6 @@ public final class Start extends Application
 
         MainController controller = loader.getController();
         IGame game = new Game();
-        Inventory inventory = new Inventory(game.getGamePlan());
         controller.init(game);
         primaryStage.show();
     }

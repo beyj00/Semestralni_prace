@@ -116,7 +116,7 @@ public class GameTest
         assertFalse(game.isGameOver());
 
         game.processCommand("zabij jarl_Haraldson");
-        assertFalse(game.getGamePlan().isDefeated());
-        assertFalse(game.isGameOver());
+        assertTrue(game.getGamePlan().isDefeated());
+        assertTrue(game.isGameOver());
     }
 }

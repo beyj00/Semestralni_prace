@@ -134,13 +134,13 @@ public class Game implements IGame
         this.gameOver = gameOver;
     }
 
-
+    /** Metoda vrací obsah inventáře*/
     public Inventory getInventory() {
         return inventory;
     }
 
     /**
-     * {@inheritDoc}
+     * Metoda vrací herní plán.
      */
     @Override
     public GamePlan getGamePlan()

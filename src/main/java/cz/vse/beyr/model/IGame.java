@@ -60,7 +60,12 @@ public interface IGame
      * @return herní plán
      */
     GamePlan getGamePlan();
-
+    /**
+     * Metoda vrací odkaz na inventar <i>(objekt třídy {@link Inventory} udržující
+     * aktuální stav inventare)</i>.
+     *
+     * @return inventar
+     */
     Inventory getInventory();
 
 }
