@@ -52,7 +52,7 @@ public class MainController {
     public ImageView background;
     public CommandShowInventory showInventory;
 
-    /**Tato metoda slouží pro zahájení a vytvoření hry, aktualizovéní veškeré grafiky a logiky (nastavení do počátečních hodnot) a vepsání prologu do
+    /**Tato metoda slouží pro zahájení a vytvoření hry, aktualizování veškeré grafiky a logiky (nastavení do počátečních hodnot) a vepsání prologu do
      *  textArey.*/
     public void init(IGame game) {
 
